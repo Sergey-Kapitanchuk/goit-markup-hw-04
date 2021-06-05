@@ -229,6 +229,11 @@ img {
 .list.portfolio li:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+.list.portfolio li:hover,
+.list.portfolio li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .list.portfolio .img-info {
   width: 370px;
@@ -267,10 +272,6 @@ img {
   padding-bottom: 94px;
 }
 
-/* .section.principles .title {
-  visibility: hidden;
-} */
-
 .principles ul {
   display: flex;
   justify-content: center;
@@ -279,11 +280,12 @@ img {
   margin-right: 30px;
 }
 
-.principles-icon {
+.principles-decor-icon {
   background: var(--grey-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
   width: 270px;
+  padding: 25px 100px;
 }
 
 .list-subtitle,
@@ -466,10 +468,38 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 20px;
 }
 
 .footer-list-icon {
+  padding: 12px 12px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+  border-radius: 50%;
+}
+
+.footer-list-icon:hover,
+.footer-list-icon:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-list-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.container.footer {
   display: flex;
+  align-items: baseline;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-social {
+  margin-left: 70px;
 }
 
 .footer .link {
